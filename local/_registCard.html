@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="registCard.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <header class="registCard-header">
+    <div class="registCard-header__container">
+      <a href="" class="registCard-header__link">
+        <img class="registCard-header__img" src="/Users/taishusawaki/projects/freemarket_sample_56a/app/assets/images/logo.svg" alt="" >
+      </a>
+      <div class="steplist-container" >
+        <ul class="steplist-container__steplist">
+          <li class="completed"><span class="bubble"></span><p>会員情報</p></li>
+          <li class="completed"><span class="bubble"></span><p>電話番号認証</p></li>
+          <li class="completed"><span class="bubble"></span><p>お届け先住所入力</p></li>
+          <li class="entering"><span class="bubble"></span><p>支払い方法</p></li>
+          <li><span class="bubble"></span><p>完了</p></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="registCard-main">
+    <div class="registCard-container">
+      <div class="registCard-container__header">
+        <p>支払い方法</p>
+      </div>
+      <div class="registCard-container__form">
+        <div class="registCard-container__form--text">
+          <p>カード番号</p><p class="registCard-container__form__required">必須</p>
+          <input type="number"" placeholder="　半角数字のみ">
+        </div>
+        <img class="registCard-container__form__cardList" src="img/card.png" alt="">
+        <div class="registCard-container__form--text">
+          <p>有効期限</p><p class="registCard-container__form__required">必須</p>
+          <div class="registCard-container__form--deadline">
+            <select name="month">
+              <option value="">-</option>
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+              <option value="5">05</option>
+              <option value="6">06</option>
+              <option value="7">07</option>
+              <option value="8">08</option>
+              <option value="9">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>　月
+            <select name="year">
+              <option value="">-</option>
+              <option value="2019">19</option>
+              <option value="2020">20</option>
+              <option value="2021">21</option>
+              <option value="2022">22</option>
+              <option value="2023">23</option>
+              <option value="2024">24</option>
+              <option value="2025">25</option>
+              <option value="2026">26</option>
+              <option value="2027">27</option>
+              <option value="2028">28</option>
+              <option value="2029">29</option>
+              <option value="2030">30</option>
+              <option value="2031">31</option>
+              <option value="2032">32</option>
+              <option value="2033">33</option>
+              <option value="2034">34</option>
+              <option value="2035">35</option>
+              <option value="2036">36</option>
+              <option value="2037">37</option>
+              <option value="2038">38</option>
+              <option value="2039">39</option>
+              <option value="2040">40</option>
+              <option value="2041">41</option>
+              <option value="2042">42</option>
+              <option value="2043">43</option>
+              <option value="2044">44</option>
+              <option value="2045">45</option>
+              <option value="2046">46</option>
+              <option value="2047">47</option>
+              <option value="2048">48</option>
+              <option value="2049">49</option>
+              <option value="2050">50</option>
+            </select>　年
+          </div>
+          <div class="registCard-container__form--text">
+            <p>セキュリティコード</p><p class="registCard-container__form__required">必須</p>
+            <input type="number" placeholder="　カード背面4桁もしくは3桁の番号">
+          </div>
+          <a class="registCard-container__form__about" href="">カード背面の番号とは？</a>
+          <div class="registAdress-container__form--submit">
+            <input type="submit" value="次へ進む">
+          </div>
+      </div>
+    </div>
+  </main>
+  <footer class="registCard-footer">
+    <div class="registCard-footer__rule">
+      <a href="">プライバシーポリシー</a>
+      <a href="">メルカリ利用規約</a>
+      <a href="">特定商取引に関する表記</a>
+    </div>
+    <div class="registCard-footer__logo">
+      <a href=""><img src="/Users/taishusawaki/projects/freemarket_sample_56a/app/assets/images/logo-gray.svg" alt=""></a>
+    </div>
+    <div class="registCard-footer__copyRight">
+      <p>© 2019 TeamA</p>
+    </div>
+  </footer>
+</body>
+</html>
